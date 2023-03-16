@@ -53,7 +53,7 @@
 
 string task02(int a, int b, int n) {
 	string msg = "error";
-	if(a < 0 || b < 0 || n < 0) {
+	if(a < 0 || b < 0 || n < 1 || a < 1 && b < 1) {
 		return msg;
 	}
 	else {
