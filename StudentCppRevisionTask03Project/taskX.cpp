@@ -42,13 +42,7 @@
 *	[output 7]: false
 */
 
-bool taskX(int n, int m, int k) {
-    if (n < 1 || m < 1 || k < 1) {
-        return false;
-    }
-    else if (k % n == 0 && n * m > k || k % m == 0 && n * m > k)  {
-        return true;
-    }
-    
-    return false;
+bool taskX(int n, int m, int k) {    
+    return n > 0 && m > 0 && k > 0 
+        && ((k % n == 0 || k % m == 0) && n * m > k);
 }
