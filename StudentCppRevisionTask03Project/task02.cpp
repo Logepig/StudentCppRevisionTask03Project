@@ -57,7 +57,7 @@ string task02(int a, int b, int n) {
 		return msg;
 	}
 	else {
-		msg = to_string(a * n) + " " + to_string(b * n);
+		msg = to_string(a * n + ((b * n) / 100)) + " " + to_string((b * n) % 100);
 	}
 
 	return msg;
